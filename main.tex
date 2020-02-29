@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage{complexity}
+\usepackage{mathtools,amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{thmtools}
+\usepackage{thm-restate}
+
+\RequirePackage[colorlinks=true]{hyperref}
+\hypersetup{
+  linkcolor=[rgb]{0,0,0.5},
+  citecolor=[rgb]{0, 0.5, 0},
+  urlcolor=[rgb]{0.5, 0, 0}
+}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\sectionautorefname}{Section}
+
+\usepackage{tcolorbox}
+\newtcolorbox{reduction}[2][]
+{
+  colframe = gray!50,
+  colback  = gray!10,
+  coltitle = gray!10!black,
+  before skip = 10pt,
+  after skip = 10pt,
+  title    = \textbf{#2},
+  #1,
+}
+\newtcolorbox{graphview}[2][]
+{
+  colframe = black!30,
+  colback  = black!0,
+  coltitle = gray!10!black,
+  before skip = 10pt,
+  after skip = 10pt,
+  title    = \textbf{#2},
+  #1,
+}
+
+
+% Algorithm package
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\algnewcommand\algorithmicinput{\textbf{Input:}}
+\algnewcommand\Input{\item[\algorithmicinput]}
+
+\algnewcommand\algorithmicoutput{\textbf{Output:}}
+\algnewcommand\Output{\item[\algorithmicoutput]}
+
+
+\input{thmmacros.tex}
+\input{macros.tex}
+
+\author{Shibainu}
+\title{Notes on the Meaning of Life}
+
+\begin{document}
+\date{}
+\maketitle
+
+
+
+\end{document}
